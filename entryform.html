@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="rijschool rocket">
+		<meta name="keywords" content="rijschool, auto, rijbewijs, autorijden, autorijschool">
+		<meta name="subject" content="autorijschool rocket">
+		<meta name="author" content="simone/bas">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <link href="entryform.css" rel="stylesheet" type="text/css">
+        
+        <script src="validatorv4.js" type="text/javascript"></script>
+      
+        
+     </head>
+  
+    
+<body>
+
+
+ <div id="navbar">
+    	
+    <div class="login"><a href="login.html">log in</a></div>
+	<img class="img" src="http://i61.tinypic.com/2r41yxu.png">
+		<br><br><br><br><br>
+		<ul>
+			<li><a href="rocketrijschool.html">Home</a></li>
+			<li><a href="nieuws.html">Nieuws</a></li>
+			<li><a href="#">Rijschool</a>
+				<ul>
+					<li><a href="organisatie.html">Organisatie</a></li>
+					<li><a href="voorwaarden.html">Voorwaarden</a></li>
+					<li><a href="vacatures.html">Vacatures</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Lessen</a>
+				<ul>
+					<li><a href="lesmethodes.html">Lesmethodes</a></li>
+					<li><a href="lespakketten.html">Lespakketten</a>
+					<li><a href="lesautos.html">Lesauto's</a></li>
+				</ul>
+			</li>
+			<li><a href="instructeurs.html">Instructeurs</a></li>
+			<li><a href="contact.html">Contact</a>
+			<ul>
+				<li><a href="bel-me-nu.html">Bel-mij-nu</a></li>
+				<li><a href="lesannuleren.html">Les-annuleren</a></li>
+				<li><a href="ophaal.html">Ophalen</a></li>
+			</ul>
+
+				
+		</ul>
+	</div>
+	
+	
+<div class="main-wrap">
+<img class="banner" src="http://i62.tinypic.com/34qvk49.jpg">
+    <div class="container">
+       
+	<div id="inschrijf">Inschrijfformulier Rocketrijschool</div>
+	
+	<form action="#" class="registration_form" id="myform">
+  <fieldset>
+    <legend>Inschrijfformulier</legend>
+	<div class="elements">
+	<label for="curses">Curses :</label>
+	 <select name="kies" class="round" id="opties">
+     <option value="1">Auto</option>
+     <option value="2">Motor</option>
+     <option value="3">Aanhangwagen</option>
+     <option value="4">Vrachtwagen</option>
+	 <option value="4">Bromfiets</option>
+	 <option value="4">Taxi</option>
+	 </select>
+	 </div>
+	 <div id="round">
+	<div class="elements">
+	  <label for="name">Naam :</label>
+      <input type="text" class="round "id="naam" placeholder="naam" size="25" required/>
+	</div>
+	<div class="elements">
+	  <label for="e-mail">Adres :</label>
+	  <input type="text" class="round" id="adres" placeholder="adres" size="25" required/>
+	</div>  
+	<div class="elements">
+	  <label for="postcode">Postcode :</label>
+	  <input type="text" class="round" id="postcode" placeholder="Postcode" size="25" required/>
+	 </div>
+     <div class="elements">
+      <label for="woonplaats">Woonplaats :</label>
+      <input type="text" class="round" id="woonplaats" placeholder="Woonplaats" size="25" required/>
+     </div>
+     <div class="elements">
+      <label for="telefoon">Telefoon :</label>
+	  <input type="text" class="round" id="telefoon" placeholder="Telefoon" size="25" required/>
+	 </div>
+	 <div class="elements">
+	  <label for="e-mail">E-mail :</label>
+	  <input type="text" class="round" id="e-mail" placeholder="E-mail" size="25" required/>
+	 </div>
+	 <div class="elements">
+	  <label for="geboortedatum">Geboortedatum :</label>
+	  <input type="text" class="round" id="geboortedatum" placeholder="Geboortedatum" size="25" required/>
+	 </div>
+	 <div class="elements">
+	  <label for="geboorteplaats">Geboorteplaats :</label>
+	  <input type="text" class="round" id="geboorteplaats" placeholder="Geboortplaats" size="25" required/>
+	 </div>
+	 <div class="elements">
+	  <label for="opmerking">Opmerkingen :</label>
+	  <textarea name="verhaal" id="verhaal" class="round" rows="8" cols="27"></textarea>
+	  </div>
+	 <div class="submit">
+      <input id="gobutton" type="submit" value="submit" />
+	  <input id="gobutton" type="submit" value="reset" />
+	 </div>
+	
+	
+</div>
+</div>
+<br><br><br>
+ <div class="footer"><a href="entryform.html" id="footertext"><br>&nbsp;<b>Schrijf je nu in en ontvang eerste les gratis!</b></a>
+	<img class="link2" src="http://i58.tinypic.com/2zq7pk3.png">
+	<img class="link3" src="http://i61.tinypic.com/14xjlaf.png">
+</div>
+
+
+
+<script type="text/javascript">
+	
+	  var frmvalidator = new Validator("myform");
+         frmvalidator.addValidation("naam", "req", "Please enter your name");
+         frmvalidator.addValidation("naam", "maxlen=20", "Max length for name is 20");
+         
+         frmvalidator.addValidation("adres", "req", "maxlen=50");
+         frmvalidator.addValidation("postcode", "req");
+         frmvalidator.addValidation("telefoon", "numeric");
+         frmvalidator.addValidation("telefoon", "maxlen=50");
+         frmvalidator.addValidation("e-mail", "email");
+         frmvalidator.addValidation("e-mail", "req", "please enter your email");
+         frmvalidator.addValidation("e-mail", "maxlen=50");
+         frmvalidator.addValidation("geboortedatum","maxlen=20");
+         frmvalidator.addValidation("geboorteplaats", "maxlen=20");
+         frmvalidator.addValidation("verhaal", "maxlen=200");
+         frmvalidator.addValidation("opties", "dontselect=000");
+	
+</script>
+
+
+    </body>
+    </html>
+    

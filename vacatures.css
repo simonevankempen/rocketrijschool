@@ -1,0 +1,197 @@
+html, body {
+    height: 100%;
+	background-color:white;
+}
+body {
+    margin: 0;
+	background-color:white;
+	color:grey;
+	font-family:sans-serif;
+}
+
+.img{
+	float:left;
+}
+/* dropdown menu */
+
+#navbar{
+	position:fixed;
+	margin:0px;
+	top:0px;
+	left:0px;
+	z-index:1;
+	width:100%;
+	background-color:#32174D;
+	height:20%;
+	font-size:120%;
+	text-align:right;
+}
+
+#navbar ul li:hover > ul{
+	display: block;
+}
+#navbar ul:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+#navbar ul{/* top menu */
+	list-style:none;
+	position:relative;
+	display:inline-table;
+	margin-top:-13px;
+}
+#navbar ul li{/* top menu link/ankerpunten */
+	padding:0px;
+	margin:0px;
+	float:left;
+	list-style:none;
+	background:#32174d;
+	border-collapse:collapse;
+}
+
+#navbar ul li:hover a{/* kleur hover top menu */
+	color:;
+}
+
+#navbar ul ul li:hover a{
+	color:#32174d;
+	background-color:white;
+}
+
+#navbar ul li a{/* links top menu */
+	display:block;
+	text-decoration:none;
+	padding: 10px 40px;
+	color:white;
+}
+#navbar ul ul{/* rand om top menu */
+	position:absolute;
+	top:100%;
+	display:none;
+	text-align:center;
+	padding:0px;
+
+	
+}
+#navbar ul ul li:hover a{/* kleur hover dropdown gedeelte */
+	background:#150920;
+	color:white;
+}
+#navbar ul ul li{/* rand om dropdown gedeelte */
+	float:none;
+	margin:0px;
+	padding:2px;
+	background-color:#32174d;
+	color:#32174d;
+	border-bottom:1px solid black;
+
+	
+}
+#navbar ul ul li a{/* dropdown links/ankerpunten */
+	padding:7 45px;
+	color:white;
+	background-color:#32174d;
+}
+
+.banner{
+	margin-top:150px;
+	margin-left:150px;
+}
+
+.login {
+	float:right;
+	color:white;
+	margin-right:5px;
+}
+.main-wrap {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+.container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.content {
+    border: 1px solid blue;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+	background-color:white;
+}
+
+
+     /*banner*/
+
+.banner{
+	margin-top:px;
+	margin-left:150px;
+}
+/*vacatures*/
+#text {
+	margin-left:150px;
+	margin-top:10px;
+}
+
+p {
+	font-size:20px;
+	color:orange;
+}
+
+ul {
+	list-style-type:none;
+}
+
+#head {
+	font-size:30px;
+	color:orange;
+	margin-left:150px;
+	margin-top:30px;
+}
+
+#other {
+	color:orange;
+}
+
+
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #32174D;
+    position: fixed;
+    bottom: 0;
+	font-size:20px;
+	font-family:sans-serif;
+
+}
+
+
+
+.link2{
+	float:right;
+	width:40px;
+	height:40px;
+	margin:20px;
+	margin-top:-16px;
+
+}
+
+.link3{
+	float:right;
+	width:38px;
+	height:38px;
+	margin:6px;
+	margin-top:-16px;
+}
+
+a:link{color:white; text-decoration:none;}
+a:visited{color:white; text-decoration:none;}
+a:hover{color:orange; text-decoration:none;}
+a:active{color:#A9A9A9; text-decoration:none}
